@@ -23,8 +23,8 @@ function geoSuccess(position){
 }
 
 function geoError(){
-    console.log("Geolocation error.")
+    console.error("Geolocation error.")
     if(userLat && userLon){
-        console.log("However, location data still available.")
+        console.warn("Despite geolocation error, location data still available.")
     }
 }
