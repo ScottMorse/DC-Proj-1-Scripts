@@ -13,7 +13,7 @@ if ("geolocation" in navigator) {
     watchID = navigator.geolocation.watchPosition(geoSuccess,geoError,geoOptions)
 } 
 else {
-    console.log('Geolocation is not available on this browser.')
+    console.error('Geolocation is not available on this browser.')
 }
 
 function geoSuccess(position){
