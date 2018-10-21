@@ -13,5 +13,3 @@ function updateMap(latitude,longitude){
     document.getElementById('map'), {zoom: 14, center: pos});
     marker = new google.maps.Marker({position: pos, map: map});
 }
-
-setTimeout(updateMap,5000)
